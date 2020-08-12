@@ -1,0 +1,168 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Adpro - Login</title>
+    <!-- Bootstrap core CSS -->
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/CSS/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/CSS/popups.css?BuildNo=@System.Web.Configuration.WebConfigurationManager.AppSettings["BuildNo"]" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="~/CSS/login.css?BuildNo=@System.Web.Configuration.WebConfigurationManager.AppSettings["BuildNo"]" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript">
+        var appRoot = '@System.Web.Configuration.WebConfigurationManager.AppSettings["RootPath"]';
+    </script>
+    <div class="cover_container">
+        <header>
+            <nav class="navbar navbar-expand-md">
+                <a class="sitemenu" href="javascript:void(0);" onclick="OpenBuildToggle()"><img src="~/img/menu-24.png" /></a>
+                <a class="navbar-brand" href="javascript:void(0);#"><img src="~/img/logo.png" /></a>
+            </nav>
+        </header>
+        <img src="~/img/np-rotated-cropped.png" style="position: fixed;right: 0;top: 0;left: 560px;" />
+        <div class="inner_cover">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="center_box">
+                        <ul id="ulCenter"></ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="login_box">
+                        <form class="form-signin" method="post" action="~/account/Login">
+                            <div class="form-group">
+                                <!--<label for="inputEmail" class="sr-only">Email address</label>
+                                <input id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" type="email">-->
+                                <input type="hidden" name="Center" value="Ahmedabad" />
+                                <input type="hidden" name="CenterId" value="1" />
+                                <label for="inputUsername" class="sr-only">Email address</label>
+                                <input name="UserName" class="form-control" placeholder="User Name" required="" autofocus="" type="text" id="loginusername">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword" class="sr-only">Password</label>
+                                <input name="Password" class="form-control" placeholder="Password" required="" type="password" id="loginpassword">
+                            </div>
+                            @*<div class="checkbox mb-3" style="clear: both;">
+                                <label>
+                                    <input value="remember-me" type="checkbox"> Remember me
+                                </label>
+                            </div>*@
+                            <button class="btn btn_login btn-block" type="submit">LOGIN</button>
+                            <input class="btn btn_login btn-block" type="button" value="CHANGE PASSWORD" onclick="ChagePasswordPopup()">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Change Password window -->
+        <div id="ChangePasswordPopUp" title="Change Password" style="display: none;">
+            <div class="dialog-body change-password">
+                <span class="ui-helper-hidden-accessible"><input type="text" /></span>
+                <table class="table table-borderless ">
+                    <tr>
+                        <th>New Password:</th>
+                        <td><input type="password" id="txtnewpassword" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <th>Confirm Password:</th>
+                        <td><input type="password" id="txtcnfrmpassword" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" onclick="ShowPassword()"> Show Password</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!--<footer></footer>-->
+        <div class="notification_box" id="showMSG" style="display:none;">
+        </div>
+    </div>
+
+    <!-- Build Trail window -->
+    <div id="toggleNavigationLeft" class="tm tm_left">
+        <div class="tm_header">
+            <label style="max-height: 40px;margin-right: auto;max-width: 220px;">Build Details</label>
+            <span class="close" id="close-btn-left">
+                <img src="~/img/cross_w_16.png" style="height:16px;margin-bottom:7px;" onclick="return $('#toggleNavigationLeft').removeClass('open');" />
+            </span>
+        </div>
+        <div id="detaildiv" style="margin:10px;color:green;"></div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    @*<script src="~/scripts/jquery-slim.min.js"></script>
+        <script src="~/scripts/popper.min.js"></script>
+        <script src="~/bootstrap/js/bootstrap.min.js"></script>*@
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery-ui.js"></script>
+    <script src="~/Scripts/main.js?BuildNo=@System.Web.Configuration.WebConfigurationManager.AppSettings["BuildNo"]"></script>
+    <script type="text/javascript">
+        window.history.forward();
+        var param = {};
+        param.xmlData = '<parameter><filtername>getcenter</filtername></parameter>';
+        url = appRoot + 'account/GetCenter';
+        var result = getresult(url, param);
+        for (i = 0; i < result.length; i++) {
+            $("#ulCenter").append('<li><a href="#" value="' + result[i].value + '">' + result[i].key + '</a></li>');
+        }
+        var varMsg = '@Session["ErrorMsg"]';
+        if (varMsg != "")
+            ShowMsg(varMsg, 0);
+        $('#ulCenter li a').click(function () {
+            $('#ulCenter li a.active').removeClass('active');
+            $(this).addClass('active')
+            $('[name="CenterId"]').val($(this).attr('value'));
+            $('[name="Center"]').val($(this).html());
+            setCookie('ClientNdAdtype', $('[name="CenterId"]').val(), 365);
+        });
+
+        $('#ChangePasswordPopUp').dialog({
+            autoOpen: false,
+            modal: true,
+            dialogClass: "base-theme",
+            buttons: {
+                "Change": function () {
+                    ChangePassword();
+                },
+                Cancel: function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+
+       // alert(getCookie('ClientNdAdtype'));
+        if (getCookie('ClientNdAdtype') == '' || getCookie('ClientNdAdtype') == null)
+            $("#ulCenter").find('li a').eq(0).click();
+        else
+            $("#ulCenter").find('li a[value=' + getCookie('ClientNdAdtype') + ']').click();
+
+        ReadBuildDetailFile();
+
+        function OpenBuildToggle() {
+            if ($('#toggleNavigationLeft').hasClass('open')) {
+                $('#toggleNavigationLeft').removeClass('open');
+            }
+            else {
+                $('#toggleNavigationLeft').addClass('open');
+            }
+        }
+
+        function ReadBuildDetailFile() {
+            var url = appRoot + "Account/ReadBuildDetailFile";
+            var param = {};
+            var result = getresult(url, param);
+            $("#detaildiv").html(result);
+        }
+    </script>
+</body>
+</html>

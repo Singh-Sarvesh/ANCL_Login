@@ -1,0 +1,294 @@
+----AccountController :GetCenter :: ------18/05/2018 10:36:58-----------------
+Could not find stored procedure 'AMS_SP_BindApproval'.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :GetCenter :: ------18/05/2018 12:44:12-----------------
+Cannot find table 0.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :GetCenter :: ------18/05/2018 12:44:17-----------------
+Cannot find table 0.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :GetCenter :: ------18/05/2018 12:44:30-----------------
+Cannot find table 0.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :GetCenter :: ------18/05/2018 12:46:38-----------------
+Cannot find table 0.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :GetCenter :: ------18/05/2018 12:50:26-----------------
+Cannot find table 0.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :Login::------18/05/2018 12:53:06-----------------
+Column 'Status' does not belong to table Table.
+
+----AccountController :Login::------18/05/2018 12:53:15-----------------
+Column 'Status' does not belong to table Table.
+
+----AccountController :Login::------18/05/2018 12:58:04-----------------
+Column 'Status' does not belong to table Table.
+
+----AccountController :Login::------18/05/2018 01:01:14-----------------
+Column 'Status' does not belong to table Table.
+
+----HomeController :GetRights :: ------18/05/2018 01:02:56-----------------
+Cannot find table 0.
+<parameter><userid>1</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----AccountController :GetCenter :: ------18/05/2018 01:03:00-----------------
+Procedure or function 'usp_EBK_GetLogout' expects parameter '@BookingCentreID', which was not supplied.
+
+----HomeController :GetRights :: ------18/05/2018 01:03:01-----------------
+Cannot find table 0.
+<parameter><userid>1</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----AccountController :GetCenter :: ------18/05/2018 01:03:40-----------------
+Procedure or function 'usp_EBK_GetLogout' expects parameter '@BookingCentreID', which was not supplied.
+
+----HomeController :GetRights :: ------18/05/2018 01:07:00-----------------
+Cannot find table 0.
+<parameter><userid>1</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----AccountController :GetCenter :: ------21/05/2018 05:55:46-----------------
+Procedure or function 'usp_EBK_GetLogout' expects parameter '@BookingCentreID', which was not supplied.
+
+----AccountController :GetCenter :: ------21/05/2018 05:56:58-----------------
+Procedure or function 'usp_EBK_GetLogout' expects parameter '@BookingCentreID', which was not supplied.
+
+----AccountController :GetCenter :: ------21/05/2018 05:57:06-----------------
+Procedure or function 'usp_EBK_GetLogout' expects parameter '@BookingCentreID', which was not supplied.
+
+----AccountController :GetCenter :: ------21/05/2018 05:57:13-----------------
+Procedure or function 'usp_EBK_GetLogout' expects parameter '@BookingCentreID', which was not supplied.
+
+----AccountController :GetCenter :: ------06-06-2018 11:32:07-----------------
+Procedure or function 'usp_EBK_GetLogout' expects parameter '@BookingCentreID', which was not supplied.
+
+----AccountController :GetCenter :: ------06-06-2018 11:32:12-----------------
+Procedure or function 'usp_EBK_GetLogout' expects parameter '@BookingCentreID', which was not supplied.
+
+----AccountController :Login::------06-06-2018 11:32:33-----------------
+Cannot use a leading .. to exit above the top directory.
+
+----AccountController :Login::------06-06-2018 11:32:49-----------------
+Cannot use a leading .. to exit above the top directory.
+
+----AccountController :Login::------06-06-2018 11:32:50-----------------
+Cannot use a leading .. to exit above the top directory.
+
+----AccountController :GetCenter :: ------06-06-2018 04:16:28-----------------
+Procedure or function 'usp_EBK_GetLogout' expects parameter '@BookingCentreID', which was not supplied.
+
+----AccountController :Login::------06-06-2018 04:16:28-----------------
+Cannot use a leading .. to exit above the top directory.
+
+----AccountController :GetCenter :: ------06-06-2018 04:34:02-----------------
+Procedure or function 'usp_EBK_GetLogout' expects parameter '@BookingCentreID', which was not supplied.
+
+----AccountController :Login::------06-06-2018 04:34:02-----------------
+Cannot use a leading .. to exit above the top directory.
+
+----AccountController :Login::------19-06-2018 12:19:05-----------------
+Cannot use a leading .. to exit above the top directory.
+
+----AccountController :Login::------19-06-2018 12:19:51-----------------
+Cannot use a leading .. to exit above the top directory.
+
+----AccountController :Login::------19-06-2018 12:20:50-----------------
+Cannot use a leading .. to exit above the top directory.
+
+----AccountController :GetCenter :: ------06/06/2019 04:56:30-----------------
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :GetCenter :: ------06/06/2019 04:57:50-----------------
+Could not find stored procedure 'usp_EBK_AdproFillLoginControl'.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :Login::------06/06/2019 04:57:58-----------------
+Procedure or function usp_EBK_GetLogin has too many arguments specified.
+
+----AccountController :GetCenter :: ------06/06/2019 04:57:59-----------------
+Could not find stored procedure 'usp_EBK_AdproFillLoginControl'.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :Login::------06/06/2019 04:58:29-----------------
+Procedure or function usp_EBK_GetLogin has too many arguments specified.
+
+----AccountController :Login::------06/06/2019 05:01:27-----------------
+Procedure or function usp_EBK_GetLogin has too many arguments specified.
+
+----AccountController :Login::------06/06/2019 05:01:34-----------------
+Procedure or function usp_EBK_GetLogin has too many arguments specified.
+
+----AccountController :Login::------06/06/2019 05:01:43-----------------
+Procedure or function usp_EBK_GetLogin has too many arguments specified.
+
+----AccountController :Login::------06/06/2019 05:02:20-----------------
+Procedure or function usp_EBK_GetLogin has too many arguments specified.
+
+----AccountController :Login::------06/06/2019 05:04:21-----------------
+Procedure or function usp_EBK_GetLogin has too many arguments specified.
+
+----AccountController :Login::------06/06/2019 05:08:19-----------------
+Procedure or function usp_EBK_GetLogin has too many arguments specified.
+
+----HomeController :GetRights :: ------06/06/2019 05:17:51-----------------
+Invalid column name 'eMaterialRights'.
+Invalid column name 'eMaterialRights'.
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select TrackingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eMaterialRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+<parameter><userid>248</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----HomeController :GetRights :: ------07/06/2019 12:07:14-----------------
+Invalid column name 'eMaterialRights'.
+Invalid column name 'eMaterialRights'.
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select TrackingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eMaterialRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+<parameter><userid>248</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----HomeController :GetRights :: ------07/06/2019 12:07:59-----------------
+Invalid column name 'eMaterialRights'.
+Invalid column name 'eMaterialRights'.
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select TrackingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eMaterialRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+<parameter><userid>248</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----HomeController :GetRights :: ------10/06/2019 10:47:06-----------------
+Invalid column name 'eMaterialRights'.
+Invalid column name 'eMaterialRights'.
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select TrackingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eMaterialRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+<parameter><userid>248</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----HomeController :GetRights :: ------12/06/2019 04:19:42-----------------
+Invalid column name 'eMaterialRights'.
+Invalid column name 'eMaterialRights'.
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select TrackingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eMaterialRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+<parameter><userid>248</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----HomeController :GetRights :: ------12/06/2019 04:37:48-----------------
+Invalid column name 'eMaterialRights'.
+Invalid column name 'eMaterialRights'.
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select TrackingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eMaterialRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+<parameter><userid>248</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----HomeController :GetRights :: ------13/06/2019 12:43:45-----------------
+Invalid column name 'eMaterialRights'.
+Invalid column name 'eMaterialRights'.
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select TrackingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eMaterialRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+<parameter><userid>248</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----HomeController :GetRights :: ------13/06/2019 03:04:19-----------------
+Invalid column name 'eMaterialRights'.
+Invalid column name 'eMaterialRights'.
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select TrackingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eMaterialRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+<parameter><userid>248</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----HomeController :GetRights :: ------12/07/2019 03:35:35-----------------
+Invalid column name 'eMaterialRights'.
+Invalid column name 'eMaterialRights'.
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select TrackingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eMaterialRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+<parameter><userid>248</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----HomeController :GetRights :: ------06/09/2019 05:48:38-----------------
+Invalid column name 'eMaterialRights'.
+Invalid column name 'eMaterialRights'.
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select TrackingRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eMaterialRights from TBL_USERRIGHTS(nolock) where UserId=248 and PEID=-1 and CenterID=-1
+<parameter><userid>248</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----AccountController :GetCenter :: ------13/09/2019 11:39:36-----------------
+Could not find stored procedure 'EBK_SP_FillLoginControl'.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :GetCenter :: ------13/09/2019 11:45:28-----------------
+Could not find stored procedure 'EBK_SP_FillLoginControl'.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :GetCenter :: ------13/09/2019 11:48:22-----------------
+Could not find stored procedure 'EBK_SP_FillLoginControl'.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :GetCenter :: ------13/09/2019 11:48:50-----------------
+Could not find stored procedure 'EBK_SP_FillLoginControl'.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :GetCenter :: ------13/09/2019 11:48:55-----------------
+Could not find stored procedure 'EBK_SP_FillLoginControl'.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :GetCenter :: ------13/09/2019 11:49:16-----------------
+Could not find stored procedure 'EBK_SP_FillLoginControl'.
+<parameter><filtername>getcenter</filtername></parameter>
+----AccountController :Login::------13/09/2019 12:03:49-----------------
+Column 'Msg' does not belong to table Table.
+
+----AccountController :Login::------13/09/2019 12:07:40-----------------
+Column 'Msg' does not belong to table Table.
+
+----AccountController :Login::------13/09/2019 02:05:37-----------------
+Index was outside the bounds of the array.
+
+----AccountController :Login::------13/09/2019 02:07:53-----------------
+Index was outside the bounds of the array.
+
+----HomeController :GetRights :: ------13/09/2019 02:10:07-----------------
+Invalid column name 'eMaterialRights'.
+Invalid column name 'eMaterialRights'.
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=1 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=1 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=1 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=1 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select TrackingRights from TBL_USERRIGHTS(nolock) where UserId=1 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eMaterialRights from TBL_USERRIGHTS(nolock) where UserId=1 and PEID=-1 and CenterID=-1
+<parameter><userid>1</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----HomeController :GetRights :: ------13/09/2019 03:36:35-----------------
+Invalid column name 'eMaterialRights'.
+Invalid column name 'eMaterialRights'.
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=1 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=1 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=1 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eBookingRights from TBL_USERRIGHTS(nolock) where UserId=1 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select TrackingRights from TBL_USERRIGHTS(nolock) where UserId=1 and PEID=-1 and CenterID=-1
+INSERT into  #Temp_Tbl(Rights) Select eMaterialRights from TBL_USERRIGHTS(nolock) where UserId=1 and PEID=-1 and CenterID=-1
+<parameter><userid>1</userid><filtername>getright</filtername><centerid>1</centerid></parameter>
+----AccountController :Login::------01/11/2019 02:46:03-----------------
+Column 'ErrorMessage' does not belong to table Table.
+
+----AccountController :Login::------07/01/2020 06:57:56-----------------
+Cannot find table 0.
+
+----AccountController :Login::------09/01/2020 02:58:13-----------------
+Cannot find table 0.
+
+----AccountController :Login::------09/01/2020 03:02:53-----------------
+Cannot find table 0.
+
+----AccountController :Login::------05/02/2020 06:00:59-----------------
+Cannot find table 0.
+
+----AccountController :Login::------05/02/2020 06:03:22-----------------
+Cannot find table 0.
+

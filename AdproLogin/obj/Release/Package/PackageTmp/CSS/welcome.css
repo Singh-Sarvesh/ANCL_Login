@@ -1,0 +1,252 @@
+/*
+ * Globals
+ */
+
+/* Links */
+/*a,
+a:focus,
+a:hover {
+    color: #fff;
+}*/
+
+.btn_transparent {
+	color: #fff;
+}
+
+.btn_transparent:hover {
+	color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #7f7f7f;
+}
+
+body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.cover_container {
+	height: 100%;
+	width: 100%;
+}
+header {
+    display: block;
+    background-color: #70ad47;
+    min-height: 60px;
+}
+
+.sitemenu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 15px 0 0 15px;
+}
+
+.usermenu {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 10px 3px 0 0;
+}
+
+.usermenu span {
+	color: #fff;
+	padding: 5px 10px;
+	display: block;
+	float: left;
+}
+
+
+
+header .navbar .dropdown.usermenu .dropbtn {
+    /*background-color: #4CAF50;*/
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+header .navbar .dropdown.usermenu {
+    position: relative;
+    display: inline-block;
+}
+
+header .navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+    header .navbar .dropdown-content a {
+        color: black;
+        padding: 5px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        header .navbar .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+header .navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .navbar .dropdown:hover .dropbtn {
+    /*background-color: #3e8e41;*/
+}
+
+.usermenu img {
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.navbar-brand {
+    margin: 0 50px;
+}
+
+    .navbar-brand > img {
+        margin: 0;
+        max-height: 30px;
+    }
+
+.modules_box {
+	padding: 20px 20px 20px;
+	text-align: center;
+	background-color: #7f7f7f;
+}
+.module {
+	display: inline-block;
+	width: 250px;
+	text-align: center;
+	overflow: hidden;
+	margin: 0 50px 10px;
+	min-height: 220px;
+	vertical-align: top;
+}
+
+ .module .headline {
+	font-size: 30px;
+	margin: 10px 0;
+	text-align: left;
+}
+.module_icon {
+	display: block;
+	text-align: left;
+}
+   .module_icon > img {
+	height: 50px;
+}
+
+.module ul {
+	padding: 0 0 0 20px;
+	margin: 0;
+	display: block;
+	color: #505050;
+    list-style: disclosure-closed;
+}
+
+   .module ul li {
+	text-align: left;
+    color:#fff;
+}
+   .module ul li.disable {
+    color: #404040;
+}
+
+    .module ul li > a {
+	font-size: 22px;
+	line-height: 1.7;
+    color:inherit;
+}
+
+      .module ul li > a:hover {
+       text-decoration:none;
+    }
+
+
+.module ul li > a.disable {
+    /*color: #404040;*/
+    pointer-events: none;
+}
+
+/*New add*/
+
+/*a.disable {
+    color: gray;
+    pointer-events: none;
+    cursor: default;
+}*/
+.notification_box {
+	position: absolute;
+	margin: auto;
+	min-height: 50px;
+	z-index: 1050;
+	left: calc(50% - 150px);
+	top: 45%;
+	width: 300px;
+}
+
+.tm {
+    background-color: #f0f0f0;
+    width: 445px;
+    height: 85%;
+    position: fixed;
+    top: 45px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    z-index: 9999;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.tm_left {
+    left: -445px;
+}
+
+    .tm_left.open {
+        left: 0px;
+    }
+
+.tm_header {
+    background-color: transparent;
+    display: flex;
+    padding: 15px 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 33px;
+    background: #385723;
+    color: #fff;
+}

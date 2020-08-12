@@ -1,0 +1,124 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Adpro - Welcome</title>
+    <!-- Bootstrap core CSS -->
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="~/CSS/welcome.css" rel="stylesheet">
+    @*<script type="text/javascript">
+            var appRoot = '@System.Web.Configuration.WebConfigurationManager.AppSettings["RootPath"]';
+            var userid = GetSessionValue(appRoot,'UserId');
+            if (userid == null || userid == '' || userid == '0') {
+                UserLogout();
+            }
+        </script>*@
+</head>
+<body>
+    <script type="text/javascript">
+        var appRoot = '@System.Web.Configuration.WebConfigurationManager.AppSettings["RootPath"]';
+    </script>
+    <div class="cover_container">
+        <input type="hidden" id="hdnUserId" value="@Session["UserId"]" />
+        <input type="hidden" id="hdnCenterId" value="@Session["CenterId"]" />
+        <header>
+            <nav class="navbar navbar-expand-md">
+                <a class="sitemenu" href="javascript:void(0);" onclick="OpenBuildToggle()"><img src="~/img/menu-24.png" /></a>
+                <a class="navbar-brand" href="javascript:void(0);#"><img src="~/img/logo.png" /></a>
+
+                <div class="usermenu ">
+                    <span class="username" style="text-transform:capitalize;">@Session["Name"].ToString().ToLower() &nbsp; | &nbsp;@Session["Center"].ToString().ToLower() &nbsp; | </span>
+                    @*<div class="dropdown usermenu">
+                            <a class="dropbtn" href="#"><img src="~/img/user-24.png" /></a>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="UserLogout()">Logout</a>
+                            </div>
+                        </div>*@
+                    <a href="#" class="btn btn-sm btn_transparent" onclick="UserLogout()" style="font-size:16px;">Logout</a>
+                </div>
+            </nav>
+        </header>
+        <div class="modules_box">
+            -
+            <div class="module">
+                <div class="module_icon"><img src="~/img/Ad-booking.png" /></div>
+
+                <h1 class="headline">Ad Booking</h1>
+                <ul>
+                    <li><a id="lnkEbooking" href='@System.Web.Configuration.WebConfigurationManager.AppSettings["eBookingUrl"]?id=@Session["UserId"]&cid=@Session["CenterId"]' target="eBooking" style="border: 1px solid #70ad47;">Booking</a></li>
+                    <li><a id="lnkUpdateBoxAddress" href='@System.Web.Configuration.WebConfigurationManager.AppSettings["UpdateBoxAddressUrl"]?id=@Session["UserId"]&cid=@Session["CenterId"]' target="Update Box Address" tabindex="2">Update Box Address</a></li>
+                    <li class="disable" style="display:none;"><a id="lnkScreening" href='@System.Web.Configuration.WebConfigurationManager.AppSettings["ScreeningUrl"]?id=@Session["UserId"]&cid=@Session["CenterId"]' target="Screening">Screening</a></li>
+                    <li class="disable" style="display:none;"><a href="javascript:void(0);">Credit Approval</a></li>
+                    <li class="disable" style="display:none;"><a href="javascript:void(0);">Proofing</a></li>
+                </ul>
+            </div>
+            <div class="module">
+                <div class="module_icon"><img src="~/img/Ad-billing.png" /></div>
+                <h1 class="headline">Billing</h1>
+                <ul>
+                    <li class="disable"><a href="javascript:void(0);" tabindex="3">Rate Audit</a></li>
+                    <li class="disable"><a href="javascript:void(0);" tabindex="3">Billing</a></li>
+                    <li class="disable" style="display:none;"><a href="javascript:void(0);">Provisional Invc./CN/DN</a></li>
+                </ul>
+            </div>
+            <div class="module">
+                <div class="module_icon"><img src="~/img/Ad-monitoring.png" /></div>
+                <h1 class="headline">Ad Monitoring</h1>
+                <ul>
+                    <li class="disable"><a id="lnkDashboard" href="javascript:void(0);" tabindex="4">Dashboard</a></li>
+                    <li class="disable" style="display:none;"><a href="javascript:void(0);">Chart Dashboard</a></li>
+
+                </ul>
+            </div>
+            <div class="module">
+                <div class="module_icon"><img src="~/img/ad-production.png" /></div>
+                <h1 class="headline">Production</h1>
+                <ul>
+                    <li><a id="lnkeMaterial" href='@System.Web.Configuration.WebConfigurationManager.AppSettings["eMaterialUrl"]?id=@Session["UserId"]&cid=@Session["CenterId"]' target="eMaterial" tabindex="5">Material</a></li>
+                    <li class="disable" style="display:none;"><a href="javascript:void(0);">Dummy</a></li>
+                    <li><a id="lnkeTypeSetting" href='@System.Web.Configuration.WebConfigurationManager.AppSettings["eTypeSettingUrl"]?id=@Session["UserId"]&cid=@Session["CenterId"]' target="eTypeSetting" tabindex="6">TypeSetting</a></li>
+                </ul>
+            </div>
+            <div class="module">
+                <div class="module_icon"><img src="~/img/Ad-tracking.png" /></div>
+                <h1 class="headline">Tracking</h1>
+                <ul>
+                    <li><a id="lnkEtrack" href='@System.Web.Configuration.WebConfigurationManager.AppSettings["eTrackUrl"]?id=@Session["UserId"]&cid=@Session["CenterId"]' target="eTrack" tabindex="7">Track</a></li>
+                    <li><a id="lnkEReport" href='@System.Web.Configuration.WebConfigurationManager.AppSettings["EReportUrl"]?id=@Session["UserId"]&cid=@Session["CenterId"]' target="eReport" tabindex="8">Report</a></li>
+                    <li class="disable" style="display:none;"><a href="javascript:void(0);">Booking Report</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Build Trail window -->
+    <div id="toggleNavigationLeft" class="tm tm_left">
+        <div class="tm_header">
+            <label style="max-height: 40px;margin-right: auto;max-width: 220px;">Build Details</label>
+            <span class="close" id="close-btn-left">
+                <img src="~/img/cross_w_16.png" style="height:16px;margin-bottom:7px;" onclick="return $('#toggleNavigationLeft').removeClass('open');" />
+            </span>
+        </div>
+        <div id="detaildiv" style="margin:10px;color:green;"></div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/scripts/jquery-slim.min.js"></script>
+    <script src="~/scripts/popper.min.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery-ui.js"></script>
+    <script src="~/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/main.js?BuildNo=@System.Web.Configuration.WebConfigurationManager.AppSettings["BuildNo"]"></script>
+    <script src="~/Scripts/welcome.js?BuildNo=@System.Web.Configuration.WebConfigurationManager.AppSettings["BuildNo"]"></script>
+    <script type="text/javascript">
+        var appRoot = '@System.Web.Configuration.WebConfigurationManager.AppSettings["RootPath"]';
+    </script>
+</body>
+</html>

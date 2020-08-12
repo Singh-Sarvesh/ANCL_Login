@@ -1,0 +1,167 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html, body {
+	height: 100%;
+	width: 100%;
+	background-color: #7f7f7f;
+    color: #fff;
+
+}
+
+.cover_container {
+  height: 100%;
+  width: 100%;
+}
+header {
+    display: block;
+    background-color: #70ad47;
+    min-height: 65px;
+}
+
+.sitemenu {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 15px 0 0 15px;
+}
+
+.usermenu {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 15px 15px 0 0;
+}
+
+.navbar-brand {
+	margin: 0 50px;
+}
+
+.navbar-brand > img {
+	margin: 0;
+	max-height: 38px;
+}
+
+.inner_cover {
+	width: 100%;
+	padding: 90px 50px 10px;
+}
+
+
+.center_box {
+	overflow: hidden;
+    display: block;
+}
+
+.center_box > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	display: block;
+}
+
+.center_box > ul > li {
+	float: left;
+	width: 33.33%;
+}
+.center_box > ul > li > a {
+	color: #000;
+	font-size: 20px;
+}
+.center_box > ul > li > a:hover,.center_box > ul > li > a.active {
+	color: #fff;
+    text-decoration:none;
+}
+
+.login_box {
+	width: 250px;
+}
+
+   .login_box .form-control {
+	color: #505050;
+	background-color: #ffffff;
+	border: 1px solid #ced4da;
+	border-radius: 0;
+}
+.btn_login {
+    color: #fff;
+    background-color: #70ad47;
+    border-color: #70ad47;
+}
+.btn_login:hover {
+	color: #fff;
+	background-color: #70ad47;
+	border-color: #70ad47;
+}
+
+
+
+.notification_box {
+	position: absolute;
+	margin: auto;
+	min-height: 50px;
+	z-index: 1050;
+	left: calc(50% - 150px);
+	top: 45%;
+	width: 300px;
+}
+
+.tm {
+    background-color: #f0f0f0;
+    width: 445px;
+    height: 85%;
+    position: fixed;
+    top: 45px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    z-index: 9999;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.tm_left {
+    left: -445px;
+}
+
+    .tm_left.open {
+        left: 0px;
+    }
+
+.tm_header {
+    background-color: transparent;
+    display: flex;
+    padding: 15px 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 33px;
+    background: #385723;
+    color: #fff;
+}
